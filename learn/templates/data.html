@@ -1,0 +1,18 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动态展示学生信息数据</title>
+</head>
+<body>
+<table style="color: green" border="2">
+<td>编号</td><td>名字</td>
+{% for m in datas %}
+   <tr>
+   <td>{{ m.id }}</td><td>{{ m.name }}</td>
+   </tr>
+{% endfor %}
+</table>
+</body>
+</html>

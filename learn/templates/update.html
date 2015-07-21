@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	 <!-- 引入jQuery -->
+	<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	 <!-- 引入 Bootstrap -->
+	 <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	 <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+	  <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	 <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+	 	 
+	 <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <title>修改个人信息</title>
+</head>
+<body>
+
+<div class="container">
+<form action="/add" method="post" role="form">
+        <input type="hidden" name="id"  value="{{ data.id }}" ><br/>
+		<div class="form-group">
+		  <label class="control-label">名字:&nbsp </label>
+		  <input class="form-control" type="text" name="name" value="{{ data.name  }}"/>
+		</div>
+		<div class="form-group">
+		  <label class="control-label">年龄:&nbsp </label>
+		  <input class="form-control" type="text" name="age" value="{{ data.age }}"/>
+		</div>
+          <input type="submit" value="保存" class="btn btn-default "/>
+
+
+</form>
+</div>
+</body>
+</html>

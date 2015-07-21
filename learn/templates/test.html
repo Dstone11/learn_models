@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	 <!-- 引入jQuery -->
+	<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	 <!-- 引入 Bootstrap -->
+	 <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	 <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+	  <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	 <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+	 	 
+	 <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+    <title>数据展示平台</title>
+		 
+</head>
+<style>
+
+</style>
+
+<body>
+<!-- bootstrap 特性容器 -->
+ <div class="container">
+
+ <h1>Hello, world! {{data}}</h1> 
+
+ <div class="row"> 
+	<div class="col-xs-4"> 
+	<h2 class="page-header">区域一</h2> 
+	<blockquote>
+		<p>Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
+		<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+		</p> </div> 
+	</blockquote>
+	<div class="col-xs-4"> 
+	<h2 class="page-header">区域二</h2>
+	<p>If you work with Bootstrap's uncompiled source code, you need to compile the LESS files to produce usable CSS files. For compiling LESS files into CSS, we only officially support Recess, which is Twitter's CSS hinter based on less.js.</p> </div> 
+	<div class="col-xs-4"> 
+	<h2 class="page-header">区域三</h2> 
+	<p>Within the download you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p> </div>
+	</div> </div>
+ </body>
+ </html>
